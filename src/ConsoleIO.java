@@ -63,7 +63,7 @@ public class ConsoleIO {
 //        // for question, you can just start typing int he console
 //        System.out.println(myString);
     
-        System.out.println("tell me something else:");
+//        System.out.println("tell me something else:");
 //        as long as there are words to pull from next then it will
 //        continue to print out --> if I type out "hey girl hey" then it
 //        will type out "hey" , "girl", "hey" each in a a new line
@@ -71,6 +71,21 @@ public class ConsoleIO {
 //            String word = sc.next();
 //            System.out.println(word);
 //        }
+
+
+//        SCANNER QUIRKS
+        System.out.println("Please enter a number: "); //prompt for input
         
+        int num = sc.nextInt(); // to get the next integer
+        
+        System.out.printf("%n Your number was: %d\n", num); // use
+        // printf to
+        // replace %d with the number
+    
+        System.out.println("Please type a sentence");
+        
+        String sentence = sc.nextLine();
+    
+        System.out.println(sentence);
     }
 }
