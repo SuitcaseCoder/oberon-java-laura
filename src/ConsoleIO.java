@@ -73,19 +73,30 @@ public class ConsoleIO {
 //        }
 
 
-//        SCANNER QUIRKS
-        System.out.println("Please enter a number: "); //prompt for input
+////        SCANNER QUIRKS
+//        System.out.println("Please enter a number: "); //prompt for input
+//
+//        int num = sc.nextInt(); // to get the next integer
+//
+//        System.out.printf("%n Your number was: %d\n", num); // use
+//        // printf to
+//        // replace %d with the number
+//
+//        System.out.println("Please type a sentence");
+//
+//        String sentence = sc.nextLine();
+//
+//        System.out.println(sentence);
         
-        int num = sc.nextInt(); // to get the next integer
-        
-        System.out.printf("%n Your number was: %d\n", num); // use
-        // printf to
-        // replace %d with the number
+        sc.useDelimiter("\n"); // Java Scanner class method which is used to set the delimiting pattern of the Scanner which is in using
+        System.out.println("please enter a number and a word: ");
+        int num = sc.nextInt();
+        String sentence = sc.next(); // forces to look for a new line
+        // character // will read everything from where the last scanner
+        // item stopped to the next enter
     
-        System.out.println("Please type a sentence");
-        
-        String sentence = sc.nextLine();
-    
+        System.out.println(num);
         System.out.println(sentence);
+        
     }
 }
