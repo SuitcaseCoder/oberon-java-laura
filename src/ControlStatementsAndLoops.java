@@ -22,6 +22,7 @@ public class ControlStatementsAndLoops {
 ////        }
 //
 //        boolean someCondition = false;
+//
 //        boolean someOtherCondition = true;
 //
 //        if (someCondition) {
